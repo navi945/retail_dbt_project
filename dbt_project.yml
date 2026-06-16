@@ -1,0 +1,27 @@
+name: 'retail_dbt_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'default'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+snapshot-paths: ["snapshots"]
+macro-paths: ["macros"]
+
+models:
+  retail_dbt_project:
+
+    staging:
+      +schema: staging
+      +materialized: view
+
+    marts:
+      +schema: mart
+      +materialized: table
+    
+    intermediate:
+      +schema: intermediate
+      +materialized: table

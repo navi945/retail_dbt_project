@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_customers
+
+    columns:
+
+      - name: customer_sk
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        tests:
+          - not_null
