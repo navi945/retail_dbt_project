@@ -2,7 +2,7 @@
 
 
 
-with customer_dedup as (
+with customer_deedup as (
 
     select *
     from (
@@ -38,4 +38,4 @@ select
 
     signup_date
 
-from customer_dedup
+from customer_deedup
