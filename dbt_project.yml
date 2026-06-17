@@ -4,12 +4,8 @@ config-version: 2
 
 profile: 'default'
 
-model-paths: ["models"]
-analysis-paths: ["analyses"]
-test-paths: ["tests"]
-seed-paths: ["seeds"]
-snapshot-paths: ["snapshots"]
-macro-paths: ["macros"]
+on-run-end:
+  - "{{ log_model_runs(results) }}"
 
 models:
   retail_dbt_project:
@@ -21,7 +17,7 @@ models:
     marts:
       +schema: mart
       +materialized: table
-    
+
     intermediate:
       +schema: intermediate
       +materialized: table

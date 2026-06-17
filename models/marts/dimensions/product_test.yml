@@ -1,16 +1,16 @@
 version: 2
 
 models:
-  - name: dim_customers
+
+  - name: dim_products
 
     columns:
 
-      - name: customer_sk
+      - name: product_sk
         tests:
-          
           - not_null
 
-      - name: customer_id
+      - name: product_id
         tests:
           - not_null
 
