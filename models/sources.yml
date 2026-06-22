@@ -6,26 +6,10 @@ sources:
     schema: RAW
 
     tables:
-      - name: CUSTOMERS
-
-      - name: PRODUCTS
-
       - name: ORDERS
-        loaded_at_field: ORDER_DATE
-
-        freshness:
-          warn_after:
-            count: 1
-            period: day
-
-          error_after:
-            count: 2
-            period: day
-
-      - name: ORDER_ITEMS
-
-      - name: INVENTORY
-
-      - name: PAYMENTS
-
       - name: RETURNS
+      - name: CUSTOMERS
+      - name: PRODUCTS
+      - name: ORDER_ITEMS
+      - name: PAYMENTS
+      - name: INVENTORY
