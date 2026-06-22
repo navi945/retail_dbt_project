@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fact_payments
+
+    columns:
+
+      - name: payment_sk
+        tests:
+          - not_null
+
+      - name: payment_id
+        tests:
+          - not_null
+
+      - name: customer_sk
+        tests:
+          - not_null
+
+      - name: payment_amount
+        tests:
+          - not_null
