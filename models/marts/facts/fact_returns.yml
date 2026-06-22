@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fact_returns
+
+    columns:
+
+      - name: return_sk
+        tests:
+          - not_null
+
+      - name: return_id
+        tests:
+          - not_null
+
+      - name: customer_sk
+        tests:
+          - not_null
+
+      - name: return_date
+        tests:
+          - not_null

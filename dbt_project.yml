@@ -21,3 +21,7 @@ models:
     intermediate:
       +schema: intermediate
       +materialized: table
+    
+    reporting:
+        +schema: reporting
+        +materialized: table  
