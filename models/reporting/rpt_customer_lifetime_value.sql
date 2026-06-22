@@ -11,6 +11,6 @@ select
 from {{ ref('fact_sales') }} fs
 
 join {{ ref('dim_customers') }} dc
-    on fs.customer_sk = dc.customer_sk
+    on fs.customer_sk = dc.customer_sk and fs.current_flag='Y'
 
 group by 1,2,3
