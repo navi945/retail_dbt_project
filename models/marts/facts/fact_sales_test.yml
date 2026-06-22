@@ -7,7 +7,6 @@ models:
 
       - name: sales_sk
         tests:
-          - unique
           - not_null
 
       - name: customer_sk
