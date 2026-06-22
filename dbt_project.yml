@@ -24,4 +24,4 @@ models:
     
     reporting:
         +schema: reporting
-        +materialized: table  
+        +materialized: table 
