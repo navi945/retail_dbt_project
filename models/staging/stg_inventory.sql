@@ -1,7 +1,8 @@
 {{ config(materialized='view') }}
-select
+
+SELECT
     PRODUCT_ID,
     STOCK_QTY,
     WAREHOUSE,
     LAST_UPDATED
-from {{ source('raw', 'INVENTORY') }}
+FROM {{ source('raw', 'INVENTORY') }} AS inventory
